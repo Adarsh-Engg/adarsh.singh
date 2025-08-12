@@ -14,6 +14,36 @@ h2, h4, h5 {
 section {
     margin-bottom: 40px;
 }
+/* ---------- Hero Section ---------- */
+.hero {
+    background: #232323;
+    text-align: center;
+    padding: 56px 20px 48px;
+}
+.hero h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.hero p {
+    font-size: 1.1rem;
+    color: #d7d7d7;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.hero .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 11px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.hero .btn:hover {
+    background-color: #0056b3;
+}
 
 /* ---------- Project Filter Buttons ---------- */
 .filter-btn {
