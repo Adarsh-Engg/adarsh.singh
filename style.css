@@ -220,3 +220,16 @@ footer {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 14px;
+    margin: 20px auto;
+  }
+  .profile-img {
+    max-width: 140px;
+    margin-bottom: 20px;
+  }
+}
+
