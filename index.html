@@ -204,26 +204,70 @@
 
 <!-- Certificates Section -->
 <section id="certificates" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="mb-4">Certificates</h2>
-    
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card shadow-lg p-3">
-          <div class="card-body">
-            <h5 class="card-title">HarvardX, an online learning initiative of Harvard University</h5>
-            <p class="card-text">Certification in <strong>Introduction to Data Science with Python</strong></p>
-            <a href="https://courses.edx.org/certificates/67993e270bde44648f7a9d9dd6c44b87" 
-               target="_blank" 
-               class="btn btn-primary">
-              View Certificate
-            </a>
-          </div>
+  <div class="container">
+    <h2 class="text-center mb-4">Certificates</h2>
+
+    <div class="cert-card">
+      <div class="text-center">
+        <!-- Issuer with a clean inline icon -->
+        <div class="issuer" aria-label="Certificate issuer">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M2 8l10-4 10 4-10 4-10-4z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M6 10v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          HarvardX · Harvard University
+          <span class="badge rounded-pill bg-success-subtle text-success border border-success-subtle ms-2">
+            Verified
+          </span>
+        </div>
+
+        <!-- Course -->
+        <p class="course">
+          Certification in <strong>Introduction to Data Science with Python</strong>
+        </p>
+
+        <!-- Meta badges -->
+        <div class="meta justify-content-center">
+          <span class="badge bg-primary">Python</span>
+          <span class="badge bg-dark">Data Science</span>
+          <span class="badge bg-info text-dark">edX</span>
+        </div>
+
+        <!-- Action -->
+        <div class="cert-actions">
+          <a
+            href="https://courses.edx.org/certificates/67993e270bde44648f7a9d9dd6c44b87"
+            target="_blank" rel="noopener"
+            class="btn btn-primary btn-lg px-4"
+            aria-label="Open your verified HarvardX certificate in a new tab"
+          >
+            View Certificate
+          </a>
         </div>
       </div>
     </div>
-
   </div>
+
+  <!-- SEO: structured data for the certificate -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOccupationalCredential",
+    "name": "Introduction to Data Science with Python",
+    "url": "https://courses.edx.org/certificates/67993e270bde44648f7a9d9dd6c44b87",
+    "recognizedBy": {
+      "@type": "CollegeOrUniversity",
+      "name": "Harvard University"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "HarvardX",
+      "sameAs": "https://www.edx.org/school/harvardx"
+    },
+    "educationalLevel": "Professional",
+    "credentialCategory": "Certificate"
+  }
+  </script>
 </section>
 
 
