@@ -149,3 +149,56 @@ body.dark-mode .cert-card {
 }
 body.dark-mode .cert-card .course { opacity: .95; }
 
+/* ---------- Quick dark-mode fixes for sj-* components ---------- */
+body.dark-mode {
+  --sj-card-bg: linear-gradient(180deg, #111317 0%, #0f1417 100%);
+  --sj-card-border: rgba(255,255,255,0.04);
+  --sj-text: #e6eef8;
+  --sj-muted: #9aa6b2;
+  --sj-accent-dark: rgba(87,184,148,0.12);
+}
+
+/* Make sj cards dark */
+body.dark-mode .sj-card,
+body.dark-mode .sj-card.highlight {
+  background: var(--sj-card-bg) !important;
+  color: var(--sj-text) !important;
+  border: 1px solid var(--sj-card-border) !important;
+  box-shadow: none !important;
+}
+
+/* Text variants inside cards */
+body.dark-mode .sj-card .sj-title,
+body.dark-mode .sj-card .sj-desc,
+body.dark-mode .sj-card .sj-tools,
+body.dark-mode .sj-card .sj-chip,
+body.dark-mode .sj-card .sj-badge {
+  color: var(--sj-text) !important;
+}
+
+/* Buttons */
+body.dark-mode .sj-btn-outline {
+  background: rgba(255,255,255,0.02);
+  color: var(--sj-text);
+  border-color: rgba(255,255,255,0.06);
+}
+body.dark-mode .sj-btn {
+  /* preserve accent but slightly brighter on dark bg */
+  box-shadow: 0 8px 26px rgba(9,122,99,0.09);
+}
+
+/* Side stat */
+body.dark-mode .sj-card-side .sj-stat-value {
+  background: linear-gradient(90deg,#062a1b,#083825);
+  color: var(--sj-text);
+  border: 1px solid var(--sj-accent-dark);
+}
+
+/* Certificates: ensure readability */
+body.dark-mode .cert-section,
+body.dark-mode .cert-card {
+  background: linear-gradient(135deg,#07121a,#071a21) !important;
+  color: var(--sj-text) !important;
+}
+
+
